@@ -4,6 +4,9 @@ import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { EventEmitterModule } from '@nestjs/event-emitter';
 import { OrdersModule } from './orders/orders.module';
+import { InventoryModule } from './inventory/iventory.module';
+import { NotificationsModule } from './notifications/notifications.module';
+import { AuditModule } from './audit/iventory.module';
 @Module({
   imports: [
     ConfigModule.forRoot({
@@ -18,6 +21,9 @@ import { OrdersModule } from './orders/orders.module';
       ignoreErrors: false,
     }),
     OrdersModule,
+    InventoryModule,
+    NotificationsModule,
+    AuditModule,
   ],
   controllers: [AppController],
   providers: [AppService],
