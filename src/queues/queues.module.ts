@@ -16,4 +16,4 @@ import { QUEUE_NAMES } from './queues.constants';
   ],
   exports: [BullModule],
 })
-export class QueueModule {}
+export class QueuesModule {}

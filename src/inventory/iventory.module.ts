@@ -1,8 +1,7 @@
 import { Module } from '@nestjs/common';
-import { InventoryListener } from './iventory.listener';
+import { InventoryProcessor } from './iventory.processor';
 
 @Module({
-  providers: [InventoryListener],
-  exports: [InventoryListener],
+  providers: [InventoryProcessor],
 })
 export class InventoryModule {}
